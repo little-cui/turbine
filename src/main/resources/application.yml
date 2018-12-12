@@ -1,0 +1,5 @@
+turbine:
+  appConfig: ${TURBINE_APPS:zuul,consumer,producer}
+  clusterNameExpression: ${TURBINE_CLUSTER_NAME_EXP:'default'}
+  aggregator:
+    clusterConfig: ${TURBINE_CLUSTERS:default}
