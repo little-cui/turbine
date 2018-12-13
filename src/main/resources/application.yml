@@ -1,5 +1,13 @@
-turbine:
-  appConfig: ${TURBINE_APPS:zuul,consumer,producer}
-  clusterNameExpression: ${TURBINE_CLUSTER_NAME_EXP:'default'}
-  aggregator:
-    clusterConfig: ${TURBINE_CLUSTERS:default}
+#turbine:
+#  appConfig: ${TURBINE_APPS:zuul,consumer,producer}
+#  clusterNameExpression: ${TURBINE_CLUSTER_NAME_EXP:'default'}
+#  aggregator:
+#    clusterConfig: ${TURBINE_CLUSTERS:default}
+
+spring:
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+
